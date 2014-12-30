@@ -1,9 +1,14 @@
 import java.io.*; 
 
 /**
- * Sample test cases in "test_cases.txt"
- * 4
+ * 
+ * Input in "test_cases.txt": 
+ * 5
  * 12
+ * Output: 
+ * 5
+ * 144
+ * 
  * */ 
 
 public class Main {
