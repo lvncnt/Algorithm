@@ -1,5 +1,11 @@
 import java.io.*; 
 
+/**
+ * Sample test cases in "test_cases.txt"
+ * 4
+ * 12
+ * */ 
+
 public class Main {
 
 	/**  O(n) runtime */
