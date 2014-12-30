@@ -2,21 +2,24 @@ import java.io.*;
 import java.util.HashMap;
 
 /**
+ * 
  * DETECTING CYCLES
  * DESCRIPTION:
  * Given a sequence, write a program to detect cycles within it.
- * Input sample in "text_cases.txt":
- * (Each line represents a list of integer) 
+ * 
+ * INPUT
+ * ("text_cases.txt": each line represents a list of integer) 
  * 
  * 2 0 6 3 1 6 3 1 6 3 1
- 3 4 8 0 11 9 7 2 5 6 10 1 49 49 49 49
- 1 2 3 1 2 3 1 2 3
- 
- OUTPUT SAMPLE:
- 6 3 1
- 49
- 1 2 3
- */
+ * 3 4 8 0 11 9 7 2 5 6 10 1 49 49 49 49
+ * 1 2 3 1 2 3 1 2 3
+ * 
+ * OUTPUT:
+ * 6 3 1
+ * 49
+ * 1 2 3
+ * 
+ **/
 
 public class Main {
 
@@ -25,14 +28,12 @@ public class Main {
 		
 		for (String element : lineArray) {
 			Integer parsedInteger = Integer.parseInt(element);
-			//System.out.printf("%d ", parsedInteger);
 			
 			if(!map.containsKey(parsedInteger)){
 				map.put(parsedInteger, 0); 
 			}
 			else if(map.get(parsedInteger) == 0){
 				System.out.printf("%d ", parsedInteger);
-				//map.replace(parsedInteger, 1); 
 				map.put(parsedInteger, map.get(parsedInteger) + 1);
 			}
 		}
