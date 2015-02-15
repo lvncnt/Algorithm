@@ -110,13 +110,6 @@ public class MinCut {
 			edges.remove(randomE);
 			adj.remove(v);
 			adj.remove(w);
-			
-			// System.out.println("Ran: " + randomEdge);
-			// System.out.println("Size: " + adj.size());
-			// System.out.println("Edges: " + edges);
-			// System.out.println("SetA: " + group.keySet());
-			// System.out.println("EdgeA: " + group.values());
-			// System.out.println("============");
 		}
 
 		int cut = 0;
