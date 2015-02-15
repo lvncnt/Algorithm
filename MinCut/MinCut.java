@@ -85,7 +85,6 @@ public class MinCut {
 			group.remove(getKey(v));
 			group.remove(getKey(w));//
 		} else {		
-			// if group is empty or getKey(v) == null && getKey(w) == null
 			edgeA.addAll(adj.get(v));
 			edgeA.addAll(adj.get(w));
 		}
@@ -110,13 +109,6 @@ public class MinCut {
 			edges.remove(randomE);
 			adj.remove(v);
 			adj.remove(w);
-			
-			// System.out.println("Ran: " + randomEdge);
-			// System.out.println("Size: " + adj.size());
-			// System.out.println("Edges: " + edges);
-			// System.out.println("SetA: " + group.keySet());
-			// System.out.println("EdgeA: " + group.values());
-			// System.out.println("============");
 		}
 
 		int cut = 0;
