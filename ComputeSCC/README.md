@@ -27,7 +27,8 @@ Using the java clas:
 .
 .
 ````
-* Test case:  
+* Test case: 
+```` 
 1 4
 2 8
 3 6
@@ -39,8 +40,9 @@ Using the java clas:
 8 6
 9 3
 9 7
-
+````
 Returns `3 3 3 0 0 `.
+
 
 
 [1]: http://spark-public.s3.amazonaws.com/algo1/programming_prob/SCC.txt
