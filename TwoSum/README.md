@@ -1,4 +1,4 @@
-This is the Programming Question - 6-I from Algorithms: Design and Analysis, Part 1. 
+This is the Programming Question - 6(I) from Algorithms: Design and Analysis, Part 1. 
 
 # Implement 2-SUM algorithm 
 
